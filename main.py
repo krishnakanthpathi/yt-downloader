@@ -60,7 +60,7 @@ def download_by_resolution(resolution):
     else:
         return jsonify({"error": error}), 500
 
-@app.route('/video_info', methods=['POST'])
+@app.route('/video_info/', methods=['POST'])
 def video_info():
     data = request.get_json()
     url = data.get('url')
