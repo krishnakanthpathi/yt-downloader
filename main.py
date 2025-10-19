@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app) 
 
 # ✅ Route to get direct video link
-@app.route('/get_direct_link/', methods=['POST'])
+@app.route('/get_direct_link', methods=['POST'])
 def get_direct_link():
     data = request.get_json()
     url = data.get('url')
